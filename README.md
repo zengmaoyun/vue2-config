@@ -43,7 +43,7 @@ yarn add --dev style-loader css-loader
 ## 遇到的问题
 
 ### 1、报错：$export is not a function
-解决： exclude的拍出node_moduldes写错了
+解决： exclude的排除内容node_moduldes拼写错了~~ ，-_-
 ```
 {
 	test: /\.js$/,
@@ -54,10 +54,10 @@ yarn add --dev style-loader css-loader
 
 ### 2、报错
 + You are using the runtime-only build of Vue where the template compiler is not available. Either pre-compile the templates into render functions, or use the compiler-included build.
-+ 原因: vue只想了 vue.common.js
++ `原因`: main.js里面import的vue指向了 vue.common.js
 Vue 最早会打包生成三个文件，一个是 runtime only 的文件 vue.common.js，一个是 compiler only 的文件 compiler.js，一个是 runtime + compiler 的文件 vue.js。
 
-+ 解决：在webpack.config.js里面更改指向
++ `解决`：在webpack.config.js里面更改指向
 ``` 
 resolve: {
     alias: {
