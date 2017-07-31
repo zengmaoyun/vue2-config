@@ -52,6 +52,8 @@ module.exports = {
 		    allChunks: true
 		}),
 		new HtmlWebpackPlugin({
+			filename: 'index.html',
+            template: 'index.html',
       		title: 'Development'
       	}),
       	new CleanWebpackPlugin(['dist'])
