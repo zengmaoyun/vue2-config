@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<basetop :baseInfo="baseInfo" :title="title"></basetop>
+		<basetop :baseInfo="baseInfo" :title="title" @change-title="changeTitle"></basetop>
 		{{title}}
 	</div>
 </template>

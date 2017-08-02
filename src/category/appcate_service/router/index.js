@@ -4,7 +4,7 @@ import basetop from "../components/basetop"
 
 Vue.use(Router)
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 export default new Router({
 	routes: [
 		{

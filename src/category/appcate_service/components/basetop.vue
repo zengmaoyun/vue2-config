@@ -31,7 +31,7 @@
 		},
 		watch: {
 			currectValue: function(val){
-				this.$emit("changeTitle",val);
+				this.$emit("change-title",val);
 			}
 		}
 	}
