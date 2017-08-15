@@ -1,17 +1,18 @@
 <template>
 	<section class="base-service">
-		<ul class="wuba-box clearfix">
+		<div class="box clearfix">
 			<a v-for="item in baseInfo"
 				class="iconbg alink-action"
 				v-bind:href="item.url"
 				v-bind:title="item.title"
-				@click.prevent>
-				<img :src="item.imgurl" @click="changeValue"/>
+				@click.prevent
+				@click="changeValue">
+				<img :src="item.imgurl"/>
 				<p class="title">{{item.title}}</p>
 				<p class="info">{{item.info}}</p>
 			</a>
 			<p>{{title}}</p>
-		</ul>
+		</div>
 	</section>
 </template>
 
@@ -36,3 +37,12 @@
 		}
 	}
 </script>
+
+<style>
+	.base-service {
+		background: pink;
+		ul li{
+			background: greenyellow
+		}
+	}
+</style>
